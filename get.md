@@ -68,3 +68,35 @@ GETメソッドでデータを送信するには、**クエリパラメータ** 
 
 ![](./images/link_display.png)
 ![](./images/get_display.png)
+
+## GETメソッドでフォームからデータ送信
+
+次に、GETメソッドでデータを送信するためのフォームを作成してみましょう。
+※HTMLのフォームの種類については、次章で詳しく説明します。
+
+`public`ディレクトリ直下に、`get.php`にフォームからデータを送信するための`form.php`を作成し、以下のコードを入力してください。
+
+```php
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETメソッドのデータ</title>
+</head>
+<body>
+    <form action="get.php" method="GET">
+        <label for="data">データ：</label>
+        <input type="text" name="data" id="data">
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
+```
+
+`form.php`をブラウザで開き、データを入力して送信ボタンをクリックしてみましょう。
+すると、以下のように表示されます。
+![](./images/form_display.png)
+![](./images/get_display.png)
+`form.php`の`action`属性に指定したURLに、フォームで入力したデータが送信されます。
+`method`属性に指定したGETメソッドで、データが送信されます。
