@@ -86,8 +86,7 @@ GETメソッドでデータを送信するには、**クエリパラメータ** 
 </head>
 <body>
     <form action="get.php" method="GET">
-        <label for="data">データ：</label>
-        <input type="text" name="data" id="data">
+        データ：<input type="text" name="data" id="data">
         <input type="submit" value="送信">
     </form>
 </body>
@@ -98,5 +97,6 @@ GETメソッドでデータを送信するには、**クエリパラメータ** 
 すると、以下のように表示されます。
 ![](./images/form_display.png)
 ![](./images/get_display.png)
+
 `form.php`の`action`属性に指定したURLに、フォームで入力したデータが送信されます。
-`method`属性に指定したGETメソッドで、データが送信されます。
+`method`属性に指定した`GET`メソッドで、データが送信されます。
