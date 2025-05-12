@@ -89,7 +89,7 @@ GETメソッドでデータを送信するには、**クエリパラメータ** 
 </head>
 <body>
     <form action="get.php" method="GET">
-        データ：<input type="text" name="data" id="data">
+        データ：<input type="text" name="data">
         <input type="submit" value="送信">
     </form>
 </body>
